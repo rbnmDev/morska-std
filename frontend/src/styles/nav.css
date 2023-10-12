@@ -1,0 +1,29 @@
+.nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: var(--paddingG) var(--paddingG) 15px var(--paddingG);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    z-index: 9999;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.special-list {
+    text-align: right;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#logo_morska {
+    fill: #222222;
+    z-index: 9999;
+}

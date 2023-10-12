@@ -1,0 +1,54 @@
+#hero {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: var(--paddingG);
+}
+
+.hero-first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-second-column img {
+    width: 100%;
+}
+
+#claim {
+    font-size: 8rem;
+    line-height: 7rem;
+    margin-top: auto;
+    margin-bottom: 100px;
+}
+
+#philosophy {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: #658533;
+}
+
+#studio {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: #d4cc6e;
+}
+
+#contact {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: #6ed4be;
+}
