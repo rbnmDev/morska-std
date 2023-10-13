@@ -33,7 +33,7 @@ export default function Nav() {
                     <svg
                         id="logo_morska"
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 2000 392.02"
+                        viewBox="0 0 2300 392.02"
                         style={{
                             transform: `scale(${svgScale})`,
                             transformOrigin: 'top left',

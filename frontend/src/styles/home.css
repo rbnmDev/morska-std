@@ -1,3 +1,5 @@
+/***** HERO SECTION *****/
+
 #hero {
     margin: 0px;
     height: 100vh;
@@ -19,7 +21,9 @@
 }
 
 .hero-second-column img {
-    width: 100%;
+    padding-top: 50px;
+    max-width: 80%;
+    min-width: 50%;
 }
 
 #claim {
@@ -29,26 +33,130 @@
     margin-bottom: 100px;
 }
 
+
+/***** PHILOSOPHY *****/
+
 #philosophy {
     margin: 0px;
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    background: #658533;
+    grid-gap: var(--paddingG);
+
 }
+
+.philosophy-first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy-second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy-third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy-fourth-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/***** PHILOSOPHY 2 *****/
+
+#philosophy2 {
+    padding-bottom: 400px;
+}
+
+#philosophy2 p {
+    width: 50%;
+}
+
+.philosophy2-first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy2-second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/***** STUDIO *****/
 
 #studio {
     margin: 0px;
-    height: 100vh;
+    padding: 0px 0px 500px 0px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    background: #d4cc6e;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: var(--paddingG);
 }
 
+.studio-first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.studio-second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.studio-third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.studio-fourth-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/***** CONTACT *****/
+
 #contact {
-    margin: 0px;
-    height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    background: #6ed4be;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: var(--paddingG);
+}
+
+.contact-first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-fourth-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

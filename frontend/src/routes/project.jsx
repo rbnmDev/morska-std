@@ -25,7 +25,7 @@ export default function Project() {
             {data.map((page) => (
                 <div key={page.id}>
                     {/*<h2>{page.title.rendered}</h2>*/}
-                    <div dangerouslySetInnerHTML={{ __html: page.content.rendered }}>
+                    <div id="project" dangerouslySetInnerHTML={{ __html: page.content.rendered }}>
                     </div>
 
                 </div>

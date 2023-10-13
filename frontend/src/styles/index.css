@@ -6,6 +6,7 @@
 
 :root {
     --paddingG: 50px;
+    --fontSize: 1.5rem;
 }
 
 body {
@@ -14,14 +15,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
-    font-size: 1.4rem;
-
-    color: #222222;
-
     padding: var(--paddingG);
+}
 
-    background: #cccccc;
-
+p {
+    font-size: var(--fontSize);
+    line-height: 2rem;
+    color: #222222;
 }
 
 img {
@@ -29,15 +29,24 @@ img {
     height: auto;
 }
 
+
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: -0.15rem;
     line-height: 5rem;
 
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: 3rem;
+}
+
 a {
+    font-size: var(--fontSize);
     text-decoration: none;
     color: #222222;
 }

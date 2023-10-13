@@ -1,12 +1,10 @@
 import { useEffect, useState, } from "react";
 import { Outlet, NavLink, useLoaderData, Form, redirect, useNavigation, useSubmit, } from "react-router-dom";
+import '../styles/portfolio.css'
 
 import { loader } from "../controller.js";
-import Nav from "../components/Nav";
 
 export default function Portfolio() {
-
-    const [page, setPage] = useState([]);
 
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -17,6 +15,7 @@ export default function Portfolio() {
 
     return (
         <>
+        <div id = "portfolio-container">
             <aside id="sidebar">
                 <div>
                     <h2>projects</h2>
@@ -38,9 +37,10 @@ export default function Portfolio() {
                 </div>
             </aside>
 
-            <section>
+            <section id="projects">
                 <Outlet />
             </section>
+        </div>
         </>
     );
 }

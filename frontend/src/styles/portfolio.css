@@ -1,0 +1,28 @@
+
+
+aside {
+    position: fixed;
+    display: block;
+    top: 33vh;
+}
+
+.active {
+    text-decoration: line-through;
+    text-decoration-line: #987575;
+}
+
+#projects {
+
+    padding: 25vh 0px 0px 80vh;
+    display: block;
+}
+
+#project p {
+    position: fixed;
+    bottom: var(--paddingG);
+    left: var(--paddingG);
+    width: 20%;
+}
+
+/* background: #987575;
+ */
