@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from 'react';
+import { NavLink, Link, useLocation } from "react-router-dom";
 import '../styles/nav.css';
 
 const MIN_WIDTH_PX = 450; // Tamaño mínimo en píxeles
@@ -13,7 +13,7 @@ export default function Nav() {
             const scrollY = window.scrollY;
 
             // Calcular el valor de escala en función del ancho mínimo en píxeles y el ancho original del SVG
-            const scale = Math.max(MIN_WIDTH_PX / ORIGINAL_SVG_WIDTH, 1 - scrollY * 0.001);
+            const scale = Math.max(MIN_WIDTH_PX / ORIGINAL_SVG_WIDTH, 1 - scrollY * 0.005);
 
             setSvgScale(scale);
         };
@@ -37,7 +37,7 @@ export default function Nav() {
                         style={{
                             transform: `scale(${svgScale})`,
                             transformOrigin: 'top left',
-                            width: '100%', // Hacer que el ancho del SVG sea el 100% de la pantalla
+                            width: '100%', 
                         }}
                     >
                         <g id="Capa_2" data-name="Capa 2">
@@ -50,18 +50,15 @@ export default function Nav() {
                         </g>
                     </svg>
                 </Link>
-                <ul>
+
+                <ul className="special-list">
                     <li>
                         <NavLink to="/projects">projects</NavLink>
                     </li>
-                </ul>
-                <ul className="special-list">
                     <li>
                         <NavLink to="/home/#studio">the_studio</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/home/#contact">contact</NavLink>
-                    </li>
+
                 </ul>
             </nav>
         </>

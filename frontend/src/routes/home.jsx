@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { NavLink, Link, useLocation } from "react-router-dom";
+
 import '../styles/home.css'
 
 export default function Home() {
+
+    const theStudioRef = useRef(null);
+    const location = useLocation();
+    const theHeroRef = useRef(null);
+
+
+    useEffect(() => {
+        console.log(location)
+        location.hash.includes("#studio") ? theStudioRef.current.scrollIntoView({ behavior: "smooth" }) : theHeroRef.current.scrollIntoView({ behavior: "smooth" }) ;
+    }, [location]);
+
+
     return (
         <>
-            <section id="hero">
+            <section id="hero" ref={theHeroRef}>
                 <div class="hero-first-column">
                     <h2 id="claim">
                         nature.<br />
@@ -37,7 +51,7 @@ export default function Home() {
             </section>
 
 
-            <section id="studio">
+            <section id="studio" ref={theStudioRef}>
                 <div class="studio-first-column">
                     <img src="/public/people/Team2.jpg" alt="team 2" />
                 </div>

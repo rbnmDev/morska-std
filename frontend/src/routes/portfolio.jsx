@@ -15,11 +15,9 @@ export default function Portfolio() {
 
     return (
         <>
-        <div id = "portfolio-container">
+        <div id= "portfolio-container">
             <aside id="sidebar">
-                <div>
-                    <h2>projects</h2>
-                </div>
+
                 <div>
                     <ul>
                         {data.map((page) => (

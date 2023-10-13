@@ -1,20 +1,20 @@
-
+#portfolio-container {
+    display: flex;
+    flex-direction: row;
+}
 
 aside {
     position: fixed;
     display: block;
-    top: 33vh;
+    top: 25vh;
 }
 
 .active {
     text-decoration: line-through;
-    text-decoration-line: #987575;
 }
 
 #projects {
-
-    padding: 25vh 0px 0px 80vh;
-    display: block;
+    margin: 12.5% 0px 0px 50%;
 }
 
 #project p {
